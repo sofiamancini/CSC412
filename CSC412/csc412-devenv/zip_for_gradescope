@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# check there is only 1 argument passed
+if [ "$#" -ne 1 ]; then
+    echo "Provide 1 argument: $0 <path_to_zip>"
+    exit 1
+fi
+
+# check if the provided argument is a valid path
+if [ ! -e "$1" ]; then
+    echo "Error: '$1' is not a valid path."
+    exit 1
+fi
+
+echo "Good job! argument '$1' is a valid path." 
+echo "We are now changing directories to that path to zip up your assignment/lab."
+echo "You will find the _handin_to_gradescope.zip file in the same directory as that path your provided."
+
+echo ""
+
+cd $1
+
+zip -r _handin_to_gradescope.zip . -x "*.vscode*" "*.vscode-server*" "*.git*" "*.DS_Store*" "*.ssh*" "*zip_for_gradescope*" '__MACOSX'
+
+echo ""
+
+echo "Done! If there were no errors, you can now upload the _handin_to_gradescope.zip file to Gradescope."
