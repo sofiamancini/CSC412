@@ -24,11 +24,11 @@ This repository contains my work for CSC412 - Operating Systems and Networks. Th
 | Assignment | Description | Technologies |
 |------------|-------------|--------------|
 | [A1: String & Sentence Reversal](/CSC412/assignments/A1) | Implemented 5 string reversal methods and 5 sentence reversal algorithms in C. Included Bash scripting for automated testing. | C, Bash |
-| [A2: UNIX Philosophy Implementation](/assignments/A2) | Recreated classic UNIX demo programs demonstrating piping and modular design. Implemented I/O operations in both C and Bash. | C, Bash, UNIX Tools |
-| [A3: Custom Shell & Utilities](/assignments/A3) | Developed a shell program using fork/execv system calls. Recreated GNU utilities in C++ and Rust (dual implementations). | C, C++, Rust, Makefile |
-| [A4: Multithreaded Codebase Improvements](/assignments/A4) | Enhanced existing C++ codebase with thread synchronization (mutexes), file handling, and debugging systems. Added logging functionality. | C++, Multithreading, File I/O |
-| [A5: Snake Game with Memory Management](/assignments/A5) | Implemented classic Snake game with dynamic memory allocation, ASCII/Unicode support, and custom level system. Focused on pointer manipulation. | C, Dynamic Memory, Unicode |
-| [A6: Debug Memory Allocator](/assignments/A6) | Built custom memory allocator with leak detection, overflow protection, and statistics tracking. Implemented safety checks against common memory errors. | C, Memory Debugging, Security |
+| [A2: UNIX Philosophy Implementation](/CSC412/assignments/A2) | Recreated classic UNIX demo programs demonstrating piping and modular design. Implemented I/O operations in both C and Bash. | C, Bash, UNIX Tools |
+| [A3: Custom Shell & Utilities](/CSC412/assignments/A3) | Developed a shell program using fork/execv system calls. Recreated GNU utilities in C++ and Rust (dual implementations). | C, C++, Rust, Makefile |
+| [A4: Multithreaded Codebase Improvements](/CSC412/assignments/A4) | Enhanced existing C++ codebase with thread synchronization (mutexes), file handling, and debugging systems. Added logging functionality. | C++, Multithreading, File I/O |
+| [A5: Snake Game with Memory Management](/CSC412/assignments/A5) | Implemented classic Snake game with dynamic memory allocation, ASCII/Unicode support, and custom level system. Focused on pointer manipulation. | C, Dynamic Memory, Unicode |
+| [A6: Debug Memory Allocator](/CSC412/assignments/A6) | Built custom memory allocator with leak detection, overflow protection, and statistics tracking. Implemented safety checks against common memory errors. | C, Memory Debugging, Security |
 
 
 
