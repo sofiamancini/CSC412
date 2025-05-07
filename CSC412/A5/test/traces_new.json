@@ -1,0 +1,78 @@
+{
+  "test001": {
+    "description": "Empty input then valid input",
+    "seed": "2",
+    "snake_grows": "0",
+    "key_input": "",
+    "name": "",
+    "output": {
+      "game_over": 0,
+      "score": 0,
+      "width": 20,
+      "height": 10,
+      "cells": [
+        "XXXXXXXXXXXXXXXXXXXX",
+        "X..................X",
+        "X.S................X",
+        "X..................X",
+        "X.........?........X",
+        "X..................X",
+        "X..................X",
+        "X..................X",
+        "X..................X",
+        "XXXXXXXXXXXXXXXXXXXX"
+      ],
+      "name": "ValidName",
+      "name_len": 9,
+      "output_contains": "Name Invalid: must be longer than 0 characters"
+    }
+  },
+  "test002": {
+    "description": "Really really long name",
+    "seed": "2",
+    "snake_grows": "0",
+    "key_input": "",
+    "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+",
+    "output": {
+      "game_over": 0,
+      "score": 0,
+      "width": 20,
+      "height": 10,
+      "cells": [
+        "XXXXXXXXXXXXXXXXXXXX",
+        "X..................X",
+        "X.S................X",
+        "X..................X",
+        "X.........?........X",
+        "X..................X",
+        "X..................X",
+        "X..................X",
+        "X..................X",
+        "XXXXXXXXXXXXXXXXXXXX"
+      ],
+      "name": "ValidName",
+      "name_len": 9,
+      "output_contains": "Name Invalid: must be less than 1000 characters"
+    }
+  },
+  "test003": {
+    "description": "Snake grows to fill entire small board",
+    "seed": "1",
+    "snake_grows": "1",
+    "key_input": "RRR",
+    "board": "B5x5|W5|W1E3W1|W1S1E2W1|W1E3W1|W5",
+    "output": {
+      "game_over": 0,
+      "score": 1,
+      "width": 5,
+      "height": 5,
+      "cells": [
+        "XXXXX",
+        "X..OX",
+        "X..SX",
+        "X...X",
+        "XXXXX"
+      ]
+    }
+  }
+}
