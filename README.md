@@ -23,7 +23,7 @@ This repository contains my work for CSC412 - Operating Systems and Networks. Th
 
 | Assignment | Description | Technologies |
 |------------|-------------|--------------|
-| [A1: String & Sentence Reversal](/assignments/A1) | Implemented 5 string reversal methods and 5 sentence reversal algorithms in C. Included Bash scripting for automated testing. | C, Bash |
+| [A1: String & Sentence Reversal](/CSC412/assignments/A1) | Implemented 5 string reversal methods and 5 sentence reversal algorithms in C. Included Bash scripting for automated testing. | C, Bash |
 | [A2: UNIX Philosophy Implementation](/assignments/A2) | Recreated classic UNIX demo programs demonstrating piping and modular design. Implemented I/O operations in both C and Bash. | C, Bash, UNIX Tools |
 | [A3: Custom Shell & Utilities](/assignments/A3) | Developed a shell program using fork/execv system calls. Recreated GNU utilities in C++ and Rust (dual implementations). | C, C++, Rust, Makefile |
 | [A4: Multithreaded Codebase Improvements](/assignments/A4) | Enhanced existing C++ codebase with thread synchronization (mutexes), file handling, and debugging systems. Added logging functionality. | C++, Multithreading, File I/O |
